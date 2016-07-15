@@ -168,3 +168,26 @@
 		</footer>
 	</body>
 <html>
+
+<!--
+	Correcciones:
+	************
+	
+	En general está muy bien, se nota que se entendió la idea de maquetar sin
+	implementar diseño. Te listo los detalles a mejorar:
+	
+	* Dentro del tag <img>, las dimensiones de la imagen se definen sin especificar "px".
+	* Convencionalmente, la imagen del logo se incluye dentro de un <h1>.
+	* Rutas de imagen como "images\afilive1.jpg", con "\" como caracter de escape, no
+	  siempre funcionan del todo bien. Algunos sistemas lo aceptan, pero el caracter
+	  aceptado universalmente es "/". Probablemente haya sido un error de tipeo, pero lo
+	  aclaro por las dudas.
+	* El tag <font> es considerado inválido a partir de HTML5, y se recomienda implementar
+	  cualquier cambio en la tipografía con CSS.
+	* Ojo con la tabulación; se pierde un poco la estructura de árbol y se complica leer
+	  el código HTML.
+	* Nombres para IDs como "section1" y "section2" no están precisamente mal en un contexto
+	  en el que todavía no se sabe bien que va a haber dentro del tag, pero conviene evitarlos
+	  al desarrollar sitios reales. Una excepción son las listas, donde se pueden usar nombres
+	  como estos sin problemas.
+-->
